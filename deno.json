@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "dev": "deno run -A --watch ./src/main.ts"
+  },
+
+  "imports": {
+    "hono": "https://deno.land/x/hono@v3.11.10/mod.ts",
+    "jsonwebtoken": "npm:jsonwebtoken"
+  }
+}
