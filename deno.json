@@ -1,6 +1,7 @@
 {
   "tasks": {
-    "dev": "deno run -A --watch --env ./src/main.ts"
+    "dev": "deno run -A --watch --env ./src/main.ts",
+    "db:push": "deno run -A npm:drizzle-kit push:sqlite"
   },
   "imports": {
     "hono": "https://deno.land/x/hono@v3.11.10/mod.ts",

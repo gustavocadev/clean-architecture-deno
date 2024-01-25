@@ -5,6 +5,7 @@
       "npm:@libsql/client": "npm:@libsql/client@0.4.0-pre.5",
       "npm:better-sqlite3": "npm:better-sqlite3@9.2.2",
       "npm:drizzle-kit": "npm:drizzle-kit@0.20.7_esbuild@0.19.10",
+      "npm:drizzle-kit@^0.20.13": "npm:drizzle-kit@0.20.13_esbuild@0.19.10",
       "npm:drizzle-orm": "npm:drizzle-orm@0.29.1_better-sqlite3@9.2.2"
     },
     "npm": {
@@ -42,6 +43,12 @@
       },
       "@drizzle-team/studio@0.0.35": {
         "integrity": "sha512-t5LTNOVf+L7Bb/wdssOIPx0ueNvhyaIXdrvKgoHR4wK0GD7SRmILcCTzn6N6Ltr1VnFzQZG/bzn6HMagn17Jtw==",
+        "dependencies": {
+          "superjson": "superjson@2.2.1"
+        }
+      },
+      "@drizzle-team/studio@0.0.39": {
+        "integrity": "sha512-c5Hkm7MmQC2n5qAsKShjQrHoqlfGslB8+qWzsGGZ+2dHMRTNG60UuzalF0h0rvBax5uzPXuGkYLGaQ+TUX3yMw==",
         "dependencies": {
           "superjson": "superjson@2.2.1"
         }
@@ -645,6 +652,25 @@
           "wordwrap": "wordwrap@1.0.0"
         }
       },
+      "drizzle-kit@0.20.13_esbuild@0.19.10": {
+        "integrity": "sha512-j9oZSQXNWG+KBJm0Sg3S/zJpncHGKnpqNfFuM4NUxUMGTcihDHhP9SW6Jncqwb5vsP1Xm0a8JLm3PZUIspC/oA==",
+        "dependencies": {
+          "@drizzle-team/studio": "@drizzle-team/studio@0.0.39",
+          "@esbuild-kit/esm-loader": "@esbuild-kit/esm-loader@2.6.5",
+          "camelcase": "camelcase@7.0.1",
+          "chalk": "chalk@5.3.0",
+          "commander": "commander@9.5.0",
+          "env-paths": "env-paths@3.0.0",
+          "esbuild": "esbuild@0.19.10",
+          "esbuild-register": "esbuild-register@3.5.0_esbuild@0.19.10",
+          "glob": "glob@8.1.0",
+          "hanji": "hanji@0.0.5",
+          "json-diff": "json-diff@0.9.0",
+          "minimatch": "minimatch@7.4.6",
+          "semver": "semver@7.5.4",
+          "zod": "zod@3.22.2"
+        }
+      },
       "drizzle-kit@0.20.7_esbuild@0.19.10": {
         "integrity": "sha512-3LjTvgVAI1jd3JHLG2tMW5ew49NuD7SMymRv+h9xUxb/geS+U/O1yENni0HhyjZH+Gc8hdStL9v1xY9Ob3s3/g==",
         "dependencies": {
@@ -675,6 +701,10 @@
         "dependencies": {
           "once": "once@1.4.0"
         }
+      },
+      "env-paths@3.0.0": {
+        "integrity": "sha512-dtJUTepzMW3Lm/NPxRf3wP4642UWhjL2sQxc+ym2YMj1m/H2zDNQOlezafzkHwn6sMstjHTwG6iQQsctDW/b1A==",
+        "dependencies": {}
       },
       "es5-ext@0.10.62": {
         "integrity": "sha512-BHLqn0klhEpnOKSrzn/Xsz2UIW8j+cGmo9JLzr8BiUapV8hPL9+FliFqjwr9ngW7jWdnxv6eO+/LqyhJVqgrjA==",
@@ -1502,6 +1532,12 @@
       "npm:better-sqlite3",
       "npm:drizzle-orm",
       "npm:jsonwebtoken"
-    ]
+    ],
+    "packageJson": {
+      "dependencies": [
+        "npm:drizzle-kit@^0.20.13",
+        "npm:drizzle-orm@^0.29.3"
+      ]
+    }
   }
 }
