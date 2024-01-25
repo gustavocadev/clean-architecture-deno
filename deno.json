@@ -1,10 +1,12 @@
 {
   "tasks": {
-    "dev": "deno run -A --watch ./src/main.ts"
+    "dev": "deno run -A --watch --env ./src/main.ts"
   },
-
   "imports": {
     "hono": "https://deno.land/x/hono@v3.11.10/mod.ts",
-    "jsonwebtoken": "npm:jsonwebtoken"
+    "jsonwebtoken": "npm:jsonwebtoken",
+    "drizzle-orm": "npm:drizzle-orm",
+    "better-sqlite3": "npm:better-sqlite3",
+    "@libsql/client": "npm:@libsql/client"
   }
 }
